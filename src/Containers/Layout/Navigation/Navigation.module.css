@@ -1,0 +1,52 @@
+.Section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.Section > div {
+  text-align: center;
+  padding: 10px;
+  color: #333;
+  border-radius: 10px;
+  width: calc(100% / 3 - 15px);
+  cursor: pointer;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: background-color 200ms ease-out;
+}
+
+.Section > div:hover{
+  background-color: #dedede;
+} 
+
+.Label {
+  font-size: 15px;
+}
+
+.Value {
+  font-size: 20px;
+  margin: 0;
+}
+
+@media (max-width: 765px) {
+  .Label {
+    font-size: 13px;
+  }
+
+  .Value {
+    font-size: 18px;
+  }
+
+  .Section {
+    flex-direction: column;
+  }
+
+  .Section > div {
+    width: 100%;
+  }
+
+  .Section > div:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}

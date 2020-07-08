@@ -1,0 +1,18 @@
+.Header {
+  text-align: center;
+}
+
+.Header h1 {
+  font-weight: lighter;
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: 4px;
+  margin-top: 0;
+}
+
+@media (max-width: 590px) {
+  .Header h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+}
